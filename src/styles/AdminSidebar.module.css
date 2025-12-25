@@ -1,0 +1,99 @@
+.sidebar {
+  width: 260px;
+  height: 100vh; /* Ensure it covers full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #050814;
+  padding: 1.25rem 1rem;
+  color: #e5e7eb;
+}
+
+.brand {
+  padding: 0.75rem 0.75rem 1.25rem;
+  border-bottom: 1px solid #111827;
+}
+
+.brandTitle {
+  font-family: 'Rajdhani', system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.8rem;
+  border-radius: 10px;
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.navItem:hover:not(.navItemActive) {
+    background: #0b1120;
+    color: #f9fafb;
+}
+
+.navItemActive {
+  background: #00e6ff;
+  color: #020617;
+}
+
+.navIcon {
+  flex-shrink: 0;
+}
+
+.bottom {
+  margin-top: 1.5rem;
+  border-top: 1px solid #111827;
+  padding-top: 1rem;
+}
+
+.userBox {
+  margin-bottom: 0.75rem;
+}
+
+.userCaption {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.userName {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.userEmail {
+  display: block;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.logoutBtn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: #b91c1c;
+  color: #f9fafb;
+  border: none;
+  border-radius: 10px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}

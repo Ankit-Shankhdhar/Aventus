@@ -1,0 +1,309 @@
+.container {
+  background: #070A13;
+  position: relative;
+  min-height: 100vh;
+  color: #f9fafb;
+  font-family: 'Rajdhani', sans-serif;
+  overflow: hidden;
+}
+
+.heroGlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 182, 212, 0.35) 0%,  
+    rgba(6, 182, 212, 0.18) 20%,
+    rgba(6, 182, 212, 0.06) 45%,
+    rgba(7, 10, 19, 1) 80%,     
+    rgba(7, 10, 19, 1) 100%
+  );
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+}
+
+.hero{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 18px 64px 64px 32px;
+    text-align: center;
+}
+
+.highlight{
+    max-width: 680px;
+    background: linear-gradient(90deg, #22d3ee 0%, #3b82f6 50%, #a855f7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.title{
+    font-family: 'Rajdhani', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(4rem, 6vw, 5.5rem);    
+    letter-spacing: 0.02rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle{
+    font-family: 'Inter', system-ui, sans-serif;
+    max-width: 680px;
+    margin: 0 auto;
+    color: #9ca3af;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.applyTypeSection {
+  max-width: 900px;
+  margin: 3rem auto 3rem;
+  text-align: center;
+}
+
+.applyTypeHeading {
+  font-family: 'Rajdhani', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #e5e7eb;
+  margin-bottom: 1.8rem;
+}
+
+.applyTypeCards {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.applyTypeCard {
+  position: relative;
+  width: 260px;
+  height: 180px;
+  background: #0a0f1c;
+  border-radius: 18px;
+  border: 1px solid #0b1220;
+  padding: 1.6rem 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.applyTypeCardActive {
+  border-color: #00e6ff;
+  border-width: 2px;
+  height: 210px;
+  background: #050b16;
+}
+
+.applyTypeCard:hover {
+  border-color: #00e6ff;
+  transition: all 0.2s ease;
+}
+
+.applyTypeIcon {
+  margin-bottom: 1.1rem;
+}
+
+.icon {
+  color: #64748b;
+}
+
+.iconActive {
+  color: #00e6ff;
+}
+
+.applyTypeTitle {
+  font-family: 'Rajdhani', system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.applyTypeText {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  max-width: 200px;
+}
+
+.applyTypeDescription{
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 1rem;
+    color: #6b7280;
+    margin-top: 0rem;
+}
+
+.checkMark {
+  position: absolute;
+  bottom: 25px;
+  color: #00e6ff;
+}
+
+.formSection {
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.formCard {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #0a0f1c;
+  border-radius: 20px;
+  border: 1px solid #0b1220;
+  padding: 1.8rem 2rem 2.4rem;
+}
+
+.formTitle {
+  font-family: 'Rajdhani', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: white;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.required {
+  color: #22d3ee;
+}
+
+.input {
+  background: #1b2232;
+  border-radius: 8px;
+  border: 1px solid #101827;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  outline: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.input::placeholder {
+  color: #4b5563;
+}
+
+.input:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.35);
+}
+
+.textarea {
+  min-height: 130px;
+  resize: none;
+}
+
+.submitButton {
+  margin-top: 0.8rem;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Rajdhani', system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+  background: #00e6ff;
+  color: #020617;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.submitButton:hover {
+  box-shadow: 0 0 40px rgba(8, 145, 178, 0.45);
+  background: #22d3ee;
+  transition: all 0.2s ease;
+}
+
+.formDisclaimer {
+  margin-top: 0.9rem;
+  font-size: 0.75rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formCard {
+    padding-inline: 1.25rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .applyTypeCards {
+    gap: 1rem;
+  }
+
+  .applyTypeCard {
+    width: 240px;
+  }
+}
+
+@media (max-width: 640px) {
+  .applyTypeSection {
+    padding-inline: 1.25rem;
+  }
+
+  .applyTypeCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .applyTypeCard {
+    width: 100%;
+    max-width: 320px;
+  }
+}

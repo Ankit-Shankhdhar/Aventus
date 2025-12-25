@@ -1,0 +1,326 @@
+.container {
+  background: #070A13;
+  position: relative;
+  min-height: 100vh;
+  color: #f9fafb;
+  font-family: 'Rajdhani', sans-serif;
+  overflow: hidden;
+}
+
+.heroGlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 182, 212, 0.35) 0%,  
+    rgba(6, 182, 212, 0.18) 20%,
+    rgba(6, 182, 212, 0.06) 45%,
+    rgba(7, 10, 19, 1) 80%,     
+    rgba(7, 10, 19, 1) 100%
+  );
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+}
+
+.hero{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 18px 64px 64px 32px;
+}
+
+.highlight{
+    max-width: 680px;
+    background: linear-gradient(90deg, #22d3ee 0%, #3b82f6 50%, #a855f7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.title{
+    font-family: 'Rajdhani', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(4rem, 6vw, 5.5rem);    
+    letter-spacing: 0.02rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle{
+    font-family: 'Inter', system-ui, sans-serif;
+    max-width: 680px;
+    color: #9ca3af;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+
+.partnersSection {
+  margin-top: 4rem;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 3rem 4rem;
+}
+
+.tierSection {
+  margin-bottom: 5rem;
+}
+
+.tierTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.tierSubtitle {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  color: #9ca3af;
+  text-align: center;
+  margin: 0 0 3rem 0;
+}
+
+/* Main Partners Grid */
+.mainPartnersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mainPartnerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(15, 30, 45, 0.6) 0%, rgba(10, 20, 35, 0.8) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-height: 220px;
+}
+
+.mainPartnerCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 230, 255, 0.3);
+  box-shadow: 0 12px 32px rgba(0, 230, 255, 0.15);
+  background: linear-gradient(135deg, rgba(15, 30, 45, 0.8) 0%, rgba(10, 20, 35, 0.95) 100%);
+}
+
+.partnerLogo {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #00e6ff 0%, #3b82f6 50%, #a855f7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #020617;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.partnerName {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f9fafb;
+  text-align: center;
+}
+
+/* Official Partners Grid */
+.officialPartnersGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.officialPartnerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, rgba(15, 30, 45, 0.5) 0%, rgba(10, 20, 35, 0.7) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-width: 240px;
+}
+
+.officialPartnerCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 230, 255, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 230, 255, 0.12);
+  background: linear-gradient(135deg, rgba(15, 30, 45, 0.7) 0%, rgba(10, 20, 35, 0.85) 100%);
+}
+
+.officialPartnerIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  background: rgba(30, 41, 59, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+  font-family: 'Rajdhani', sans-serif;
+  flex-shrink: 0;
+}
+
+.officialPartnerName {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f9fafb;
+  text-align: center;
+}
+
+/* Supporters Grid */
+.supportersGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.supporterBadge {
+  padding: 0.75rem 1.5rem;
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 8px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: #9ca3af;
+  transition: all 0.2s ease;
+}
+
+.supporterBadge:hover {
+  background: rgba(30, 41, 59, 0.8);
+  color: #e5e7eb;
+}
+
+/* CTA Section */
+.ctaSection {
+  margin-top: 5rem;
+}
+
+.ctaCard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3.5rem 3rem;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(59, 130, 246, 0.06) 100%);
+  border: 1px solid rgba(0, 230, 255, 0.2);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+.ctaText {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.05rem;
+  color: #9ca3af;
+  line-height: 1.7;
+  margin: 0 0 2rem 0;
+}
+
+.ctaButton {
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Rajdhani', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: #00e6ff;
+  color: #020617;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  box-shadow: 0 0 20px rgba(0, 230, 255, 0.4), 0 0 40px rgba(0, 230, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.emptyState {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 2rem 3rem;
+  }
+
+  .mainPartnersGrid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 0 1.5rem 3rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .mainPartnersGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .officialPartnersGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tierSection {
+    margin-bottom: 3rem;
+  }
+
+  .ctaCard {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .ctaTitle {
+    font-size: 2rem;
+  }
+}
